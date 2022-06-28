@@ -12,10 +12,12 @@ body {
 }
 
 .container {
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
+
 
 .bhromaon-title {
     font-size: 24px;
@@ -55,6 +57,7 @@ body {
     background: url("images/bg1.png") center no-repeat;
     background-size: cover;
     
+    
 
     &__container {
         display: flex;
@@ -67,6 +70,7 @@ body {
         font-size: 48px;
         padding-top: 10%;
         margin-bottom: 16px;
+        text-align: center;
     }
 
     &__subtitle {
@@ -74,6 +78,7 @@ body {
         font-weight: 400;
         letter-spacing: 0.31em;
         margin-bottom: 50px;
+        text-align: center;
     }
 
     &__form {
@@ -89,6 +94,7 @@ body {
         display: block;
         width: 100%;
         max-width: 500px;
+        padding: 0 10px;
     }
 
     ::placeholder {
@@ -98,7 +104,7 @@ body {
         font-weight: 400;
         letter-spacing: 0.2em;
         color: #999999;
-        padding: 0 126px;
+        text-align: center;
     }
 
     &__btn {
@@ -123,7 +129,6 @@ body {
         font-size: 14px;
         letter-spacing: 0.2em;
         color: #ffffff;
-        
         margin-bottom: 16px;
     }
 
@@ -148,11 +153,13 @@ body {
     // .header__title
 
     &__title {
+        align-self: center;
     }
 
     // .header__nav
 
     &__nav {
+        display: flex;
     }
 
     // .header__nav-link
@@ -166,6 +173,7 @@ body {
         color: #ffffff;
         text-decoration: none;
         margin-left: 34px;
+        flex-shrink: 0;
     }
 }
 
@@ -182,7 +190,13 @@ body {
 
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding-top: 120px;
+    }
+
+    &__lower-block-container {
+        display: flex;
+        justify-content: space-around;
         padding-top: 120px;
     }
 
@@ -220,6 +234,7 @@ body {
         text-align: end;
     }
 
+
     &__pic img:first-child {
         margin-right: 124px;
     }
@@ -236,7 +251,6 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0 68px;
         }
     }
 
@@ -250,7 +264,7 @@ body {
         width: 58px;
         height: 57px;
         background-color: #5474fd;
-        mask-image: url("fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/SVG/search.svg");
+        mask-image: url('fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/SVG/search.svg');
         mask-size: cover;
     }
 
@@ -370,7 +384,8 @@ body {
     // .what__img
 
     &__img {
-        
+        object-fit: cover;
+
     }
 
     // .what__blockquote
@@ -380,7 +395,6 @@ body {
         margin: 0;
         font-style: normal;
         background-color: #333333;
-        
     }
 
     // .what__author
@@ -421,14 +435,12 @@ body {
         letter-spacing: 0.1em;
         color: #ffffff;
         margin-bottom: 30px;
-        
     }
 
     // .footer__social
 
     &__social {
         padding-bottom: 54px;
-        
     }
 }
 
@@ -438,9 +450,13 @@ body {
 }
 .fb, .tw, .yt, .pr {
     color: #e8e8e8;
+    font-size: 20px;
+    
 }
 
 .in {
     color: #5474fd;
+    font-size: 20px;
 }
 
+/* Landscape - телефоны */

@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* От ландшафтного экрана телефона до потретного планшета */
+/* От портретного планшета до ландшафтного экрана и настольных дисплеев */
+/* Большой дисплей */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 979px) {
+  .container {
+    max-width: 768px;
+  }
+  .why {
+    text-align: center;
+  }
+  .why__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .why__title {
+    margin: 0 0 62px 0;
+  }
+  .why__text {
+    display: block;
+    margin: 0 auto 48px auto;
+  }
+  .why__btn {
+    margin: 0 auto 50px auto;
+  }
+  .why__pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .why__pic img:first-child {
+    margin-right: 20px;
+  }
+  .what__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .what__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+  .main__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__input {
+    min-height: 60px;
+    margin-bottom: 20px;
+  }
+  .header__title {
+    margin-right: 30px;
+  }
+  .header__nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__nav-link {
+    padding: 10px 0;
+  }
+  .why__lower-block-container {
+    padding-top: 40px;
+  }
+  .why__pic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .why__pic img:first-child {
+    margin: 0 0 10px 0;
+  }
+  .why__item-title {
+    margin: 30px 0 40px 0;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    max-width: 320px;
+  }
+  .main__title {
+    font-size: 38px;
+  }
+  .main__form {
+    margin-bottom: 40px;
+  }
+  .main__input {
+    width: 90%;
+  }
+  .main ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .main :-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .main ::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .main ::placeholder {
+    font-size: 12px;
+  }
+  .main__block {
+    margin-bottom: 0;
+  }
+  .header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__title {
+    margin: 0 0 20px 0;
+  }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__nav-link {
+    margin: 0 10px;
+  }
+  .why__container {
+    padding: 50px 15px 0 15px;
+  }
+  .why__pic img {
+    max-width: 100%;
+  }
+  .why__lower-block-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .why__title {
+    margin-bottom: 40px;
+  }
+  .why__text {
+    margin-bottom: 30px;
+  }
+  .why__item-title {
+    font-size: 20px;
+  }
+  .places__container {
+    padding: 0 10px;
+  }
+  .places__place1, .places__place2 {
+    padding: 20px 0;
+  }
+  .places__block1, .places__block2 {
+    margin-top: 0;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .what__container {
+    padding: 50px 15px;
+  }
+  .what__title {
+    margin: 0;
+  }
+  .footer__title {
+    padding-top: 30px;
+    margin: 0 auto 10px auto;
+    font-size: 20px;
+  }
+  .footer__text {
+    margin-bottom: 20px;
+  }
+  .footer__social {
+    padding-bottom: 30px;
+  }
+  .footer .fb, .footer .tw, .footer .yt, .footer .pr, .footer .in {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

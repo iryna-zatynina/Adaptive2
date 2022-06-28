@@ -1,0 +1,252 @@
+
+ 
+/* От ландшафтного экрана телефона до потретного планшета */
+
+
+/* От портретного планшета до ландшафтного экрана и настольных дисплеев */
+
+/* Большой дисплей */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 980px;
+    }
+}
+
+@media (max-width: 979px) { 
+    .container {
+        max-width: 768px;
+    }
+
+    .why {
+        text-align: center;
+
+        &__container { 
+            flex-direction: column;
+        }
+
+
+        &__title {
+            margin: 0 0 62px 0;
+        }
+
+        &__text {
+            display: block;
+            margin: 0 auto 48px auto;
+        }
+
+        &__btn {
+            margin: 0 auto 50px auto;
+        }
+
+        &__pic {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        &__pic img:first-child {
+            margin-right: 20px;
+        }
+    }
+
+    .what {
+
+        &__block {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        &__img {
+            object-fit: contain;
+        }
+
+    }
+}
+
+@media  (max-width: 767px) {
+    .container {
+        max-width: 480px;
+    }
+    
+    .main {
+        &__form {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__input {
+            min-height: 60px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .header {
+
+        &__title {
+            margin-right: 30px;
+        }
+
+        &__nav {
+            flex-wrap: wrap;
+        }
+
+        &__nav-link {
+            padding: 10px 0;
+        }
+    }
+    .why {
+
+        &__lower-block-container {
+            padding-top: 40px;
+        }
+
+        &__pic {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__pic img:first-child {
+            margin: 0 0 10px 0;
+        }
+
+        &__item-title {
+            margin: 30px 0 40px 0;
+            line-height: 40px;
+        }
+    }
+
+
+  }
+
+@media  (max-width: 479px) {  
+    body {
+        margin: 0;
+    }
+    .container {
+        max-width: 320px;
+    }
+
+    .main {
+        &__title {
+            font-size: 38px;
+        }
+
+        &__form {
+            margin-bottom: 40px;
+        }
+
+        &__input {
+            width: 90%;
+        }
+
+        ::placeholder {
+            font-size: 12px;
+        }
+
+        &__block {
+            margin-bottom: 0;
+        }
+    }
+
+    .header {
+        
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            margin: 0 0 20px 0;
+        }
+
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__nav-link {
+            margin: 0 10px;
+        
+        }
+    }
+
+    .why {
+        
+        &__container {
+            padding: 50px 15px 0 15px;
+        }
+
+        &__pic img {
+            max-width: 100%;
+        }
+
+        &__lower-block-container {
+            flex-direction: column;
+        }
+
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+        }
+
+        &__item-title {
+            font-size: 20px;
+        }
+    }
+
+    .places {
+        &__container {
+            padding: 0 10px;
+        }
+        
+        &__place1, 
+        &__place2 {
+            padding: 20px 0;
+        }
+
+        &__block1,
+        &__block2 {
+            margin-top: 0;
+            max-width: fit-content;
+        }
+    }
+
+    .what {
+
+        &__container {
+            padding: 50px 15px;
+        }
+
+        &__title {
+            margin: 0;
+        }
+    }
+
+    .footer {
+        &__title {
+            padding-top: 30px;
+            margin: 0 auto 10px auto;
+            font-size: 20px;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+        }
+
+        &__social {
+            padding-bottom: 30px;
+        }
+
+        .fb, .tw, .yt, .pr, .in {
+            font-size: 30px;
+            letter-spacing: 10px;
+            
+        }
+    
+    }
+}
+
+
