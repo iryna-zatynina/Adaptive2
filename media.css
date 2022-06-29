@@ -102,6 +102,12 @@
     margin: 30px 0 40px 0;
     line-height: 40px;
   }
+  .places__block1, .places__block2 {
+    margin-top: 0;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }
 
 @media (max-width: 479px) {
@@ -133,7 +139,7 @@
     font-size: 12px;
   }
   .main__block {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
   .header__container {
     -webkit-box-orient: vertical;
@@ -182,17 +188,12 @@
   .places__place1, .places__place2 {
     padding: 20px 0;
   }
-  .places__block1, .places__block2 {
-    margin-top: 0;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-  }
   .what__container {
     padding: 50px 15px;
   }
   .what__title {
-    margin: 0;
+    margin-bottom: 40px;
+    line-height: 44px;
   }
   .footer__title {
     padding-top: 30px;
